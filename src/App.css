@@ -15,6 +15,17 @@
   padding: 5rem;
 }
 
+/*Using media queries setting different styling dependent on
+screen size.*/
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
 label {
   text-align: left;
   padding: 0.25rem 0;
@@ -36,10 +47,27 @@ button {
   color: purple;
 }
 
+button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  background-color: red;
+}
+
+
 .link-btn {
   background: none;
   color: white;
   text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.link-btn:active {
+  background-color: red;
 }
 
 nav ul {
@@ -51,6 +79,16 @@ nav ul {
 nav ul li {
   list-style-type: none;
   margin-right: 1rem;
+  color: aliceblue;
+
+}
+
+nav ul li:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li:active {
+  background-color: red;
 }
 
 Nav {
