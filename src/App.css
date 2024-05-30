@@ -6,12 +6,13 @@
   align-items: center;
   justify-content: center;
   color: purple;
-  background-image: linear-gradient(79deg, #7439db, #c66fbc, #f7944d);
+  background-image: url('https://cdn.britannica.com/11/202411-050-BF7B0DF0/Ornamental-Echeveria-succulents-in-cultivation.jpg');
 }
 
 .auth-form-container, .login-form, .register-form {
   display: flex;
   flex-direction: column;
+  padding: 5rem;
 }
 
 label {
@@ -50,4 +51,8 @@ nav ul {
 nav ul li {
   list-style-type: none;
   margin-right: 1rem;
+}
+
+Nav {
+  background-color: #AAB7C2;
 }

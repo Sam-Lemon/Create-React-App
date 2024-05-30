@@ -20,12 +20,11 @@ toggles whichever corresponding form is needed.*/
   return (
     <>
       <div className='App'>
-        {
-          currentForm === 'login' ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm} />
-        }
+              {
+                currentForm === 'login' ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm} />
+              }
       </div>
       <Nav />
-      
     </>
   );
 }
