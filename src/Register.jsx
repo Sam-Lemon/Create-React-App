@@ -17,9 +17,9 @@ and logs the email submitted. */
 
     return (
         <div className="auth-form-container">
-            <form onSubmit={handleSubmit}> 
+            <form className="register-form" onSubmit={handleSubmit}> 
                 <label htmlFor="name">Full name</label> 
-                <input value={name} onChange={(e) => setName(e.target.value)} type="name" id="name" placeholder="Full Name" />
+                <input value={name} name="name" id="name" placeholder="Full Name" />
 
                 <label htmlFor="email">Email</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="email@gmail.com" id="email" name="email" />
@@ -27,9 +27,9 @@ and logs the email submitted. */
                 <label htmlFor="password">Password</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="******************" id="password" name="password" />
 
-                <button type="submit">Log In</button>
+                <button className="submit-button" type="submit">Log In</button>
             </form>
-            <button onClick={() => props.onFormSwitch('login')}>Have an account? Log in here.</button>
+            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Have an account? Log in here.</button>
         </div>
     )
 }
