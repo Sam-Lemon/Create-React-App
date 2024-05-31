@@ -35,6 +35,10 @@ nav ul li {
 
 }
 
+li:first-child {
+  float: left;
+}
+
 nav ul li:hover {
   color: #DAE4DD;
 }

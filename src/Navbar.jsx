@@ -1,4 +1,5 @@
 //Nav.js is the navbar component
+import Logo from './Logo';
 
 //use class name instead of class when writing JSX
 function Nav() {    //name function after component to avoid confusion
@@ -6,9 +7,10 @@ function Nav() {    //name function after component to avoid confusion
       <nav className='navBar'>
         <ul className='nav-ul'>
           <div className='nav-ul-li'>
-            <li>Home</li>
-            <li>Careers</li>
+            <Logo />
             <li>Contact Us</li>
+            <li>Careers</li>
+            <li>Home</li>
           </div>
         </ul>
       </nav>

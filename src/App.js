@@ -3,7 +3,6 @@ import './App.css';
 import Nav from './Navbar';
 import { Login } from "./Login";  
 import { Register } from "./Register";  
-import Footer from './Footer';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -28,7 +27,6 @@ toggles whichever corresponding form is needed.*/
           }
       </div>
 
-      <Footer />
     </>
   );
 }
