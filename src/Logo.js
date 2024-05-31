@@ -1,14 +1,11 @@
 
-import React, { Component } from "react";
+import React from 'react';
+import logo from './images/logo-transparent-png.png'; 
 
-class Logo extends Component {
-    render() {
-        return (
-            <div className="logo-test">
-                <img alt="test logo in react js" src="./images/logo-transparent-png.png" />
-            </div>
-        )
-    }
+console.log(logo); 
+
+function CCLogo() {
+    return <img src={logo} className='logo' alt="Cacti Crafted logo" />;
 }
 
-export default Logo;
+export default CCLogo;

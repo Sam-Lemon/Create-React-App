@@ -38,7 +38,7 @@ SAY SOMETHING ABOUT THE PROPS AND ONCHANGE FUNCTION
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="email@gmail.com" id="email" name="email" />
 
                 <label htmlFor="password">Password</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder=" " id="password" name="password" />
+                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
 
                 <button className="submit-button" type="submit">Log In</button>
             </form>
