@@ -17,7 +17,7 @@ and logs the email submitted. */
 
     return (
         <div className="auth-form-container">
-                <h2>Register</h2>
+                <h2 className="form-header">Register</h2>
             <form className="register-form" onSubmit={handleSubmit}> 
                 <label htmlFor="name">Full name</label> 
                 <input value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" placeholder="Full Name" />

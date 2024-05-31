@@ -36,7 +36,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #849EB2;
+  color: #DAE4DD;
 }
 
 /*****************************************************************/
@@ -49,6 +49,8 @@ nav ul li:hover {
 
 .login-header {
   font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1.5px 1px #9C738E;
 }
 
 .login-form {
@@ -56,42 +58,56 @@ nav ul li:hover {
 }
 
 .auth-form-container {
-    padding: 2rem;
-    border: 3px groove white;
-    border-radius: 10px;
-    margin: 0.5rem;
-    background-color:rgba(182,140,157,0.75);
-    color: rgb(251, 231, 251);
+  padding: 1rem;
+  border: 5px outset #D1ADB9;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color:rgba(182,140,157,0.90);
+  color: #492431;
+  text-shadow: 1px 1px #9C738E;
+}
 
+.register-form {
+  padding: 2rem;
 }
 
 label {
   text-align: left;
   padding: 0.25rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
 }
 
 input {
+  background-color: rgba(205,210,219,0.85);
   margin: 0.5rem 0;
   padding: 1rem;
   border: none;
   border-radius: 10px;
+  border: 3px solid #9C738E;
+}
+
+.submit-button {
+  background-color: rgb(205,210,219);
+  border: 3px solid #9C738E;
 }
 
 button {
   border: none;
-  background-color: white;
+  background-color: #DFE2DE;
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
   color: purple;
+  font-weight: bold;
 }
 
 button:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: #A76B95;
 }
 
-button:active {
-  background-color: red;
+.submit-button:active {
+  background-color: #D1ADB9;
 }
 
 .link-btn {
@@ -111,6 +127,8 @@ button:active {
   display: flex;
   justify-content: center;
   background-color: #B5C3D1;
+  font-size: 16px;
+  padding: 5px;
 
 }
 
