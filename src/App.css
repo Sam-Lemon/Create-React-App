@@ -5,9 +5,41 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  color: purple;
+  color: rgb(251, 247, 251);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat; background-size: cover;
   background-image: url('https://cdn.britannica.com/11/202411-050-BF7B0DF0/Ornamental-Echeveria-succulents-in-cultivation.jpg');
 }
+
+/*****************************************************************/
+
+.navBar {
+  background-color: #B5C3D1;
+  font-size: 16px;
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: block;
+  float: right;
+  margin-right: 1em;  /*em is in relation to the root of the file*/
+  color: #114B1E;
+
+}
+
+nav ul li:hover {
+  color: #849EB2;
+}
+
+/*****************************************************************/
 
 .auth-form-container, .login-form, .register-form {
   display: flex;
@@ -15,15 +47,22 @@
   padding: 5rem;
 }
 
-/*Using media queries setting different styling dependent on
-screen size.*/
-@media screen and (min-width: 600px) {
-  .auth-form-container {
-    padding: 5rem;
-    border: 1px solid white;
+.login-header {
+  font-size: xx-large;
+}
+
+.login-form {
+ padding: 20px;
+}
+
+.auth-form-container {
+    padding: 2rem;
+    border: 3px groove white;
     border-radius: 10px;
     margin: 0.5rem;
-  }
+    background-color:rgba(182,140,157,0.75);
+    color: rgb(251, 231, 251);
+
 }
 
 label {
@@ -55,7 +94,6 @@ button:active {
   background-color: red;
 }
 
-
 .link-btn {
   background: none;
   color: white;
@@ -66,31 +104,66 @@ button:active {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.link-btn:active {
-  background-color: red;
+/*****************************************************************/
+
+.footer-logo {
+  border: 4px solid green;
+  display: flex;
+  justify-content: center;
+  background-color: #B5C3D1;
+
 }
 
-nav ul {
-  display: flex;
+.brand-logo {
+  border: 4px solid red;
+}
+
+/****************************************************************
+
+
+
+
+
+Nav {
+  padding: 2px;
+  height: 75px;
+  width: 100vw;
+  color: #114B1E;
+  font-size: 24px;
+
+}
+
+.nav-ul {
+  display: grid;
   flex-direction: row;
   justify-content: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 0px;
+
 }
 
-nav ul li {
-  list-style-type: none;
+.nav-logo {
+  border: 3px solid red;
+  justify-content: left;
+}
+
+.brand-logo {
+  max-width: 80px;
+  max-height: 61px;
+}
+
+.nav-ul-li {
+  margin-top: 10px;
   margin-right: 1rem;
-  color: aliceblue;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #114B1E;
 
 }
 
 nav ul li:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(244, 241, 241, 0.5);
 }
-
-nav ul li:active {
-  background-color: red;
-}
-
-Nav {
-  background-color: #AAB7C2;
-}
+*/

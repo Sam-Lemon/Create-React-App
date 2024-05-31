@@ -1,8 +1,9 @@
 import React, { useState } from 'react';  //importing the useState hook 
 import './App.css';
 import Nav from './Navbar';
-import { Login } from "./Login";  //the login component
-import { Register } from "./Register";  //the register component
+import { Login } from "./Login";  
+import { Register } from "./Register";  
+import Footer from './Footer';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -19,12 +20,15 @@ is 'login', otherwise it'll show the Register component. And the onFormSwitch
 toggles whichever corresponding form is needed.*/
   return (
     <>
-      <div className='App'>
-              {
-                currentForm === 'login' ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm} />
-              }
-      </div>
       <Nav />
+
+      <div className='App'>
+          {
+            currentForm === 'login' ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm} />
+          }
+      </div>
+
+      <Footer />
     </>
   );
 }

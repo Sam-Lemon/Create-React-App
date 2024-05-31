@@ -4,14 +4,15 @@
 function Nav() {    //name function after component to avoid confusion
   return(
       <nav className='navBar'>
-          <ul className='navList'>
-              <li>Home</li>
-              <li>Contact Us</li>
-              <li>Careers</li>
-          </ul>
+        <ul className='nav-ul'>
+          <div className='nav-ul-li'>
+            <li>Home</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+          </div>
+        </ul>
       </nav>
   );
 }
 
 export default Nav; //lets application know we intend for this component function to be exported by default when it's imported elsewhere in the app
-
