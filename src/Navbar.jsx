@@ -1,4 +1,9 @@
-//Nav.js is the navbar component
+/*This is the navbar component. I imported my Logo in and created a 
+function to display the navbar. The a hrefs have been left empty for 
+future use and I put the Logo in just before the <li> navigation so 
+that it could be a part of the navbar, but styled differently than
+the <li>.*/
+
 import Logo from './Logo';
 
 //use class name instead of class when writing JSX
@@ -8,9 +13,9 @@ function Nav() {    //name function after component to avoid confusion
         <ul className='nav-ul'>
           <div className='nav-ul-li'>
             <Logo />
-            <li>Contact Us</li>
-            <li>Careers</li>
-            <li>Home</li>
+            <li a href=" ">Contact Us</li>
+            <li a href=" ">Careers</li>
+            <li a href=" ">Home</li>
           </div>
         </ul>
       </nav>

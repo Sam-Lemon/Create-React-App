@@ -1,4 +1,6 @@
-/*Need to have the useState here at the top. */
+/*The Register component is basically the same as the Login component,
+with values changed slightly to match Register in the HTML portion. */
+
 import React, { useState } from "react";
 
 
@@ -17,7 +19,7 @@ and logs the email submitted. */
 
     return (
         <div className="auth-form-container">
-                <h2 className="form-header">Register</h2>
+                <h3 className="form-header">Register</h3>
             <form className="register-form" onSubmit={handleSubmit}> 
                 <label htmlFor="name">Full name</label> 
                 <input value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" placeholder="Full Name" />

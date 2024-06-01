@@ -1,4 +1,5 @@
-/*100 vh is 100% of view-height, vw would be the same but for view-width*/
+/*The main app styling. I've set a background image and because I don't want it repeating
+itself, I set background-repeat to take care of that.*/
 .App {
   text-align: center;
   display: flex;
@@ -13,6 +14,12 @@
 }
 
 /*****************************************************************/
+/*Below is all of the navbar styling, as per the assignment directions
+it is at the top of the page. I really struggled with moving the logo
+to the left and keeping all of the rest of the navbar <li> to the right but I
+ended up using the float property to get it sorted out. I've also added
+pseudo class to each of the <li> so that on hover the text gets lighter
+and on a click the background color changes slightly.*/
 
 .navBar {
   background-color: rgba(181,195,209,0.90);
@@ -38,7 +45,6 @@ nav ul li {
   margin-top: 2.5rem;
   margin-right: 1em;  /*em is in relation to the root of the file*/
   color: #114B1E;
-
 }
 
 nav ul li:hover {
@@ -52,6 +58,12 @@ nav ul li:active {
 }
 
 /*****************************************************************/
+/*Below is the styling for the login/register forms. As is requested
+for the assignment I have put the forms in the center of the page and
+have added a border. I also played with color transparency with the
+main form div as well as with the input fields. I added some box and 
+text shadowing for dimension and played with the ::hover and ::active 
+pseudo classes.*/
 
 .auth-form-container, .login-form, .register-form {
   display: flex;
