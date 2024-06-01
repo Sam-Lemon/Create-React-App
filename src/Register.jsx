@@ -18,7 +18,7 @@ and logs the email submitted. */
     }
 
     return (
-        <div className="auth-form-container">
+        <div className="reg-form-container">
                 <h3 className="form-header">Register</h3>
             <form className="register-form" onSubmit={handleSubmit}> 
                 <label htmlFor="name">Full name</label> 

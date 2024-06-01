@@ -34,7 +34,7 @@ When the submit button is pushed, the function handleSubmit will run.
 I needed to wrap the whole form in a div (auth-form-container) because 
 return only returns parent elements, it cannot return sibling elements.*/
 
-       <div className="auth-form-container">
+       <div className="log-form-container">
                 <h3 className="form-header">Login</h3>
             <form className="login-form" onSubmit={handleSubmit}>   
                 <label htmlFor="email">Email</label>

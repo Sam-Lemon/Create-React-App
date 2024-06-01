@@ -84,14 +84,21 @@ pseudo classes.*/
  padding: 20px;
 }
 
-.auth-form-container {
-  padding: 1rem;
+.log-form-container, .reg-form-container {
   border: 5px outset #D1ADB9;
   border-radius: 10px;
   margin: 0.5rem;
   background-color:rgba(182,140,157,0.90);
   color: #492431;
   text-shadow: 1px 1px #9C738E;
+}
+
+.log-form-container {
+  padding: 1rem;
+}
+
+.reg-form-container {
+  padding: 2rem;
 }
 
 .register-form {
