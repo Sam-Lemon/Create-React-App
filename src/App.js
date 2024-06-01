@@ -1,7 +1,6 @@
 import React, { useState } from 'react';  //importing the useState hook 
 import './App.css';
 import Nav from './Navbar';
-import Footer from './Footer';
 import { Login } from "./Login";  
 import { Register } from "./Register";  
 
